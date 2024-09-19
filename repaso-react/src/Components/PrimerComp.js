@@ -6,7 +6,7 @@ export const PrimerComp = () => {
 
   return (
     <div>PrimerComp
-    <p>mi nombre es {nombre} </p>
+    <p>mi nombre es {nombre + "Arnaldich"} </p>
     </div>
   )
 }
