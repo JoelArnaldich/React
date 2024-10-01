@@ -1,0 +1,47 @@
+/* Keypad.css */
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  .keypad button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .keypad button:hover {
+    background-color: #ddd;
+  }
+  
+  .keypad button:active {
+    background-color: #ccc;
+  }
+  
+  .keypad button:nth-child(4n) {
+    background-color: #53b100; 
+    color: white;
+    border-radius: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .keypad button {
+      font-size: 2rem; 
+      padding: 25px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .keypad button {
+      font-size: 1.5rem; 
+      padding: 15px;
+    }
+  }
+  

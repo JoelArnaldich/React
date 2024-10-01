@@ -1,0 +1,28 @@
+/* App.css */
+
+.calculator {
+  width: 350px;
+  margin: 50px auto;
+  border: 3px solid #bfbfbf;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 2px;
+  flex-direction: column;
+
+}
+
+@media (min-width: 768px) {
+  .calculator {
+    width: 375px; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .calculator {
+    width: 500px; 
+    height: auto;
+  }
+}
