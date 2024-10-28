@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: flex-end;
   box-sizing: border-box;
+  
 }
 
 @media (min-width: 768px) {
