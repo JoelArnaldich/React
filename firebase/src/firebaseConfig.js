@@ -1,7 +1,8 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getAuth } from "firebase/auth";
+import { getAuth } from 'firebase/auth';  // Para autenticación
+import { getFirestore } from 'firebase/firestore';  // Para la base de datos
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -17,9 +18,11 @@ const firebaseConfig = {
   measurementId: "G-EFMZ4HTK13"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-export const auth = getAuth(app);
 
-export default app;
+// Exportar los servicios de Firebase
+const auth = getAuth(app);  // Servicio de autenticación
+const db = getFirestore(app);  // Servicio de Firestore (base de datos)
+
+// Exportar auth y db para que otros archivos puedan usarlos
+export { auth, db };
